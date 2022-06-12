@@ -22,6 +22,10 @@
     font-display: swap;
 }
 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
@@ -32,6 +36,15 @@ body {
     line-height: 22px;
     color: #2D3440;
     background-color: #FEAFC3;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.content {
+    width: 1170px;
+    margin: 0 auto;
 }
 
 .page-header {
@@ -45,8 +58,11 @@ body {
     margin: 24px 0 0 0;
 }
 
-.gllacy-logo {
+.gllacy-logo-wrapper {
     padding-right: 32px;
+}
+
+.gllacy-logo {
     margin: 0;
 }
 
@@ -81,7 +97,6 @@ body {
 
 .header-navigation-item {
     padding: 0 16px 0 0;
-
 }
 
 .header-navigation-item:first-child {
@@ -99,6 +114,7 @@ body {
     border: none;
     width: 32px;
     height: 32px;
+    background-color: rgba(252, 252, 252, 0.3);
 }
 
 .header-enter-button {
@@ -108,6 +124,12 @@ body {
     height: 32px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: rgba(252, 252, 252, 0.3);
+}
+
+.header-enter-icon {
+    margin-right: 8px;
 }
 
 .header-cart-button {
@@ -117,15 +139,290 @@ body {
     height: 32px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: rgba(252, 252, 252, 0.3);
 }
 
-main {
-    width: 1170px;
-    margin: 0 auto;
+.header-cart-icon {
+    margin-right: 8px;
+}
+
+.gifts {
+    margin: 0 0 80px 0;
+}
+
+.gifts-headline {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    padding: 0 300px 56px; 
+    margin: 80px 0 0 0;
+}
+
+.gifts-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    position: relative;
+}
+
+.gifts-banner {
+    background-color: #FF7799;
+    border-radius: 16px;
+}
+
+.raspberry-banner {
+    background-image: url("../images/raspberry.png");
+    background-repeat: no-repeat;
+    background-position: bottom right 5%;
+}
+
+.marshmallow-banner {
+    background-image: url("../images/marshmallow.png");
+    background-repeat: no-repeat;
+    background-position: bottom right 2%;
+}
+
+.gifts-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 40px auto 16px 40px;
+}
+
+.gifts-raspberry-description {
+    margin: 0 209px 32px 40px;
+}
+
+.gifts-marshmallow-description {
+    margin: 0 236px 32px 40px;
+}
+
+.button-gifts {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background: #FCFCFC;
+    border: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    margin: 0 auto 40px 40px;
+    width: 176px;
+    height: 44px;
+}
+
+.button-gifts:hover {
+    background: rgba(252, 252, 252, 0.4);
+    border: 4px solid #FCFCFC;
+    box-shadow: 0px 4px 15px rgba(133, 133, 133, 0.15);
+}
+
+.button-gifts:focus {
+    border: 2px solid #2D3440;
+}
+
+.goods-headline {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    margin: 0 300px 107px 300px;
+}
+
+.goods-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.goods-item {
+    background: #FCFCFC;
+    border-radius: 8px;
+}
+
+.goods-image {
+    display: block;
+    margin: -51px auto 16px;
+}
+
+.goods-title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.goods-description {
+    color: #565C66;
+    margin: 8px 40px 20px 40px;
+    text-align: center;
+}
+
+.goods-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px 24px 40px;
+  }
+
+.goods-price {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.goods-button {
+    background: #FF2F64;
+    border-radius: 26px;
+    border: none;
+    width: 32px;
+    height: 32px;
+}
+
+.feedback {
+    background-image: url("../images/contacts-bg.jpg");
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 64px 763px 64px 64px;
+}
+
+.feedback-wrapper {
+    background: #FCFCFC;
+    box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+    border-radius: 8px;
+}
+
+.feedback-description-address {
+    margin: 0;
+    padding: 40px 124px 12px 40px;
+}
+
+.feedback-address {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 40px 24px 40px;
+}
+
+.feedback-description-phone {
+    margin: 0;
+    padding: 0 100px 12px 40px;
+}
+
+.feedback-phone {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 78px 0 40px;
+}
+
+.feedback-description-phone-2 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0 143px 32px 40px;
+}
+
+.feedback-button {
+    color: #FCFCFC;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background: #FF2F64;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    width: 250px;
+    height: 46px;
+    margin: 0 53px 40px 40px;
+}
+
+.feedback-button:hover {
+    background: rgba(252, 252, 252, 0.3);
+    border: 4px solid #FF2F64;
+    color: #2D3440;
+} 
+
+.feedback-button:focus {
+    border: 2px solid #2D3440;
+}
+
+.feedback-button:disabled {
+    color: #565C66;
+    background: #B9B9B9;
+    border: 4px solid rgba(185, 185, 185, 0.3);
 }
 
 .page-footer {
-    width: 1170px;
+    display: flex;
     margin: 0 auto;
-}
+    padding: 48px 0;
+  }
+  
+  .footer-social-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0 300px 0 0;
+    padding: 0;
+  }
 
+  .footer-social-item {
+      padding-right: 16px;
+  }
+
+  .footer-social-item:last-child {
+    padding-right: 0;
+  }
+
+
+  .footer-information-list, .footer-about-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-information-list {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 8px 2px;
+    font-size: 14px;
+    line-height: 1.43;
+    margin: 0 200px 0 0;
+  }
+  
+  .footer-information-item {
+    padding-left: 23px;
+  }
+  
+  .footer-information-item-first {
+    background-image: url("../images/icons/heart.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+  
+  }
+  
+  .footer-information-link {
+    text-decoration: none;
+    color: #2D3440;
+  }
+  
+  .footer-information-link-first {
+    font-weight: 700;
+  }
+  
+  .footer-about-list {
+    color: #2D3440;
+  }
+  
+  .copyright-text {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+  
+  .footer-copyright-link {
+    color: #2D3440;
+  
+  }
