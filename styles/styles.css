@@ -86,6 +86,11 @@ body {
     padding-right: 0;
 }
 
+.header-menu-link {
+    text-decoration: none;
+    color: #2D3440;
+}
+
 .navigation-list {
     list-style-type: none;
     display: flex;
@@ -107,6 +112,11 @@ body {
 
 .header-navigation-item:last-child {
     padding-right: 0;
+}
+
+.phone-link {
+    text-decoration: none;
+    color: #2D3440;
 }
 
 .header-search-button {
@@ -247,6 +257,12 @@ body {
     border-radius: 8px;
 }
 
+.goods-link {
+    text-decoration: none;
+    color: #2D3440;
+
+}
+
 .goods-image {
     display: block;
     margin: -51px auto 16px;
@@ -299,6 +315,7 @@ body {
     background-repeat: no-repeat;
     padding: 24px;
     margin: 0 0 80px;
+    border-radius: 16px;
 }
 
 .about-wrapper {
@@ -350,11 +367,205 @@ body {
     margin: 0 16px 74px 32px;
 }
 
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 0 0 76px;
+}
+
+.new-info-banner {
+    background-image: url("../images/info-bg.png");
+    background-repeat: no-repeat;
+}
+
+.info-description {
+    line-height: 20px;
+    color: #565C66;
+    margin: 33px auto 12px 32px;
+}
+
+.info-header {
+    line-height: 30px;
+    margin: 0 235px 62px 32px;
+}
+
+.subscribe-banner {
+    background-image: url("../images/subscribe-bg.png");
+    background-repeat: no-repeat;
+    padding: 6px;
+}
+
+.subscribe-bg {
+    background-color: #FCFCFC;
+    border-radius: 16px;
+    padding: 24px 20px;
+}
+
+.subscribe-description {
+    color: #565C66;
+    margin: 0;
+    padding: 0 0 42px 0;
+}
+
+.email {
+    width: 332px;
+    height: 48px;
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.subscribe-button {
+    color: #FCFCFC;
+    font-weight: 700;
+    font-size: 16px;
+    background: #FF2F64;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    width: 152px;
+    height: 44px;
+    margin: 0 0 0 24px;
+}
+
+.subscribe-button:hover {
+    background: rgba(252, 252, 252, 0.3);
+    border: 4px solid #FF2F64;
+    color: #2D3440;
+} 
+
+.subscribe-button:focus {
+    border: 2px solid #2D3440;
+}
+
+.subscribe-button:disabled {
+    color: #565C66;
+    background: #B9B9B9;
+    border: 4px solid rgba(185, 185, 185, 0.3);
+}
+
+.delivery {
+    background-image: url("../images/delivery-bg.png");
+    background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.delivery-headline {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    margin: 167px 150px 24px 100px;
+}
+
+.delivery-description {
+    color: #565C66;
+    margin: 0 135px 163px 100px;
+}
+
+.delivery-appointment {
+    background-color: #FCFCFC;
+    border-radius: 8px;
+    margin: 64px 64px 64px 0;
+}
+
+.date-form-wrapper {
+    margin: 0 16px 28px 40px;
+}
+
+.phone-form-wrapper {
+    margin: 0 40px auto 0;
+}
+
+.delivery-appointment-description {
+    color: #565C66;
+    margin: 40px 80px 32px 40px;
+}
+
+.delivery-form-wrapper {
+    display: flex;
+}
+
+.delivery-date {
+    font-weight: 700;
+}
+
+.delivery-phone {
+    font-weight: 700;
+}
+
+.delivery-address {
+    font-weight: 700;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.date-input {
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
+    width: 117px;
+    height: 48px;
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.phone-input {
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
+    width: 287px;
+    height: 48px;
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.address-input {
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
+    width: 420px;
+    height: 48px;
+    font-family: 'Inter';
+    font-size: 16px;
+    margin: 8px 40px 32px 40px;
+}
+
+.delivery-button {
+    color: #FCFCFC;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background: #FF2F64;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    width: 152px;
+    height: 44px;
+    margin: 0 173px 41px 175px;
+}
+
+.delivery-button:hover {
+    background: rgba(252, 252, 252, 0.3);
+    border: 4px solid #FF2F64;
+    color: #2D3440;
+} 
+
+.delivery-button:focus {
+    border: 2px solid #2D3440;
+}
+
+.delivery-button:disabled {
+    color: #565C66;
+    background: #B9B9B9;
+    border: 4px solid rgba(185, 185, 185, 0.3);
+}
+
 .feedback {
     background-image: url("../images/contacts-bg.jpg");
     background-repeat: no-repeat;
     margin: 0;
     padding: 64px 763px 64px 64px;
+    border-radius: 16px;
 }
 
 .feedback-wrapper {

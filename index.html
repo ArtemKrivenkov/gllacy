@@ -10,24 +10,24 @@
  <header class="page-header">
    <nav class="header-navigation">
     <div class="gllacy-logo-wrapper">
-      <a class="gllacy-logo-link">
+      <a class="gllacy-logo-link" href="">
     <img class="gllacy-logo" src="images/gllacy-logo.svg" alt="логотип глейси." width="137" height="56">
       </a>
   </div>
     <ul class="header-menu">
     <li class="header-menu-item">
-      <a class="header-menu-link">Каталог</a>
+      <a class="header-menu-link" href="">Каталог</a>
     </li>
     <li class="header-menu-item">
-      <a class="header-menu-link">Доставка и оплата</a>
+      <a class="header-menu-link" href="">Доставка и оплата</a>
     </li>
     <li class="header-menu-item">
-      <a class="header-menu-link">О компании</a>
+      <a class="header-menu-link" href="">О компании</a>
     </li>
     </ul>
     <ul class="navigation-list">
       <li class="header-navigation-item">
-        <a class="phone-link">+7 800 555-86-28</a>
+        <a class="phone-link" href="">+7 800 555-86-28</a>
       </li>
       <li class="header-navigation-item">
         <button class="button header-search-button">
@@ -73,7 +73,7 @@
      <h2 class="headline goods-headline">Попробуйте самые популярные вкусы нашего мороженого</h2>
      <ul class="goods-list">
        <li class="goods-item">
-        <a class="goods-link">
+        <a class="goods-link" href="">
          <img class="goods-image" src="images/raspberry-type.png" alt="изображение малины." width="168" height="168">
         <h3 class="goods-title">Малинка</h3>
        <p class="description goods-description">Сливочное мороженое с малиновым джемом</p>
@@ -86,7 +86,7 @@
     </div>
        </li>
        <li class="goods-item">
-        <a class="goods-link">
+        <a class="goods-link" href="">
         <img class="goods-image" src="images/pistachios.png" alt="изображение фистащек." width="168" height="168">
        <h3 class="goods-title">Фисташка</h3>
       <p class="description goods-description">Фисташковый пломбир с кусочками шоколада</p>
@@ -99,7 +99,7 @@
     </div>
       </li>
       <li class="goods-item">
-        <a class="goods-link">
+        <a class="goods-link" href="">
         <img class="goods-image" src="images/blueberry.png" alt="изображение черники." width="168" height="168">
        <h3 class="goods-title">Черника</h3>
       <p class="description goods-description">Крем-брюле<br>с черничным джемом</p>
@@ -112,7 +112,7 @@
       </div>
       </li>
       <li class="goods-item">
-        <a class="goods-link">
+        <a class="goods-link" href="">
         <img class="goods-image" src="images/bubble_gum.png" alt="изображение бабл-гам." width="168" height="168">
        <h3 class="goods-title">Бабл-гам</h3>
       <p class="description goods-description">Ванильный пломбир<br>со сладкой посыпкой</p>
@@ -155,32 +155,54 @@
     </div>
    </section>
    <section class="info">
-     <div class="info-banner">
+     <div class="new-info-banner">
        <a class="info-link">
-       <h2 class="info-header">Новое в нашем блоге</h2>
-       <p class="info-description">10 способов сервировки фруктовых щербетов
-        к столу</p>
+      <p class="info-description"> Новое в нашем блоге</p>
+       <h2 class="info-header">10 способов сервировки фруктовых щербетов
+        к столу</h2>
        </a>
      </div>
-     <div class="info-banner">
-       <p class="description">Подпишитесь на нашу сладкую рассылку и будьте всегда
-        в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+     <div class="subscribe-banner">
+      <div class="subscribe-bg">
+       <p class="description subscribe-description">Подпишитесь на нашу сладкую рассылку и будьте всегда<br>
+        в курсе всего самого вкусного, что у нас происходит. Обещаем<br>не спамить и не слать всякой ненужной ерунды. Честно =)</p>
        <form class="email-form" action="">
-        <input class= "email" type="email" id="appointment-email" name="appointment-email" placeholder="email@example.com">
-        <button class="button" type="submit">Отправить</button>
+        <input class="email" type="email" id="appointment-email" name="appointment-email" placeholder="email@example.com">
+        <button class="button subscribe-button" type="submit">Отправить</button>
       </form>
+    </div>
      </div>
    </section>
    <section class="delivery">
-     <div>
-       <h2 class="headline">Доставка любимого мороженого на дом</h2>
-       <p class="description">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, 
+     <div class="delivery-description-wrapper">
+       <h2 class="headline delivery-headline">Доставка любимого мороженого на дом</h2>
+       <p class="description delivery-description">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, 
          и курьер привезёт вам ваш заказ в течение часа!</p>
      </div>
-     <div>
-       <p class="description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-       <button class="button">Отправить</button>
-     </div>
+     <div class="delivery-appointment">
+       <p class="description delivery-appointment-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+       <div class="delivery-form-wrapper">
+        <div class="date-form-wrapper">
+          <span class="delivery-date">Дата</span>
+          <img class="" src="images/i-icon.svg" height="13" width="13">
+          <form class="date-form" action="#" method="post">
+            <input class="date-input" type="text" placeholder="01.04.2020">
+           </form>
+        </div>
+     <div class="phone-form-wrapper">
+       <span class="delivery-phone">Телефон</span>
+       <form class="phone-form" action="#" method="post">
+        <input class="phone-input" type="text" placeholder="+7 800 999-00-00">
+       </form>
+      </div>
+       </div>
+       <span class="delivery-address">Адрес</span>
+       <img class="" src="images/i-icon.svg" height="13" width="13">
+       <form class="address-form" action="#" method="post">
+        <input class="address-input" type="text" placeholder="ул. Большая Конюшенная, 19/8">
+       </form>
+       <button class="button delivery-button">Отправить</button>
+      </div>
    </section>
    <section class="feedback">
      <div class="feedback-wrapper">
